@@ -6,3 +6,8 @@ describe('TicTacToe', () => {
     expect(game.currentPlayer).toBe('X');
   });
 });
+it('Players alternate turns', () => {
+  const game = new TicTacToe();
+  game.makeMove(0, 0); // X moves
+  expect(game.currentPlayer).toBe('O');
+});
