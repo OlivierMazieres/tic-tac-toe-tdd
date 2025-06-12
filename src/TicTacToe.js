@@ -5,3 +5,6 @@ class TicTacToe {
 }
 
 module.exports = TicTacToe;
+makeMove(row, col) {
+  this.currentPlayer = this.currentPlayer === 'X' ? 'O' : 'X';
+}
